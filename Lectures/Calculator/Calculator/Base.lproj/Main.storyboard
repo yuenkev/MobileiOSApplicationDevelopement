@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars-landscape-background-with-flat-design_23-2147979445" translatesAutoresizingMaskIntoConstraints="NO" id="FaK-oo-8Ga">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="vTp-Zb-a6e">
+                                <rect key="frame" x="49" y="78" width="294" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-Zc-Zru">
+                                <rect key="frame" x="16" y="227.33333333333331" width="361" height="590.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="FaC-AR-Di0">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="147.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjO-AU-FpC">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="1"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYn-eF-K0t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oif-De-bp5">
+                                                <rect key="frame" x="90.333333333333343" y="0.0" width="90.333333333333343" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="2"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akc-I5-4fi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4A-9r-XRY">
+                                                <rect key="frame" x="180.66666666666666" y="0.0" width="89.999999999999972" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="3"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdm-2f-ktb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZm-JD-WJh">
+                                                <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="+"/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOc-fY-jtH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Vla-45-nyU">
+                                        <rect key="frame" x="0.0" y="147.66666666666669" width="361" height="147.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01J-qY-hSd">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="4"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vv-tn-6Vq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6o-Ar-szE">
+                                                <rect key="frame" x="90.333333333333343" y="0.0" width="90.333333333333343" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="5"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PT-Nz-EBh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plb-T7-QvH">
+                                                <rect key="frame" x="180.66666666666666" y="0.0" width="89.999999999999972" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="6"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xaU-9g-VlT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFs-8e-0tO">
+                                                <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="_"/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJJ-sc-cFT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="KaC-DW-lqw">
+                                        <rect key="frame" x="0.0" y="295.33333333333326" width="361" height="147.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLN-VB-qqn">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="7"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9g-Oo-R8C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xT-UV-yxD">
+                                                <rect key="frame" x="90.333333333333343" y="0.0" width="90.333333333333343" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="8"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQd-68-fgY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IW-GI-5hg">
+                                                <rect key="frame" x="180.66666666666666" y="0.0" width="89.999999999999972" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="9"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J85-cW-2aI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb6-GN-BNZ">
+                                                <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Divide"/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OE5-Lu-kNn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zjH-pN-rCp">
+                                        <rect key="frame" x="0.0" y="443.00000000000006" width="361" height="147.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zax-bF-eNc">
+                                                <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="C"/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j0b-tl-0QW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aes-eD-rwo">
+                                                <rect key="frame" x="90.333333333333343" y="0.0" width="90.333333333333343" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="0"/>
+                                                <connections>
+                                                    <action selector="numberBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K11-Ak-Ux4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAw-UR-UnR">
+                                                <rect key="frame" x="180.66666666666666" y="0.0" width="89.999999999999972" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="="/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgy-5k-woq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcm-xh-A1h">
+                                                <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="147.66666666666666"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Multiply"/>
+                                                <connections>
+                                                    <action selector="operators:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wr2-qe-tzx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLI-Bt-ZZI">
+                                <rect key="frame" x="97" y="114" width="179" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54.333333333333329" id="Aq5-Sp-uzk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FaK-oo-8Ga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Ie-dO-1qQ"/>
+                            <constraint firstItem="FaK-oo-8Ga" firstAttribute="centerX" secondItem="vTp-Zb-a6e" secondAttribute="centerX" id="9LY-H9-JkX"/>
+                            <constraint firstItem="e0K-Zc-Zru" firstAttribute="top" secondItem="vTp-Zb-a6e" secondAttribute="bottom" constant="21" id="Ggl-cB-h58"/>
+                            <constraint firstItem="vTp-Zb-a6e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="Q83-kL-CLB"/>
+                            <constraint firstItem="e0K-Zc-Zru" firstAttribute="centerX" secondItem="pLI-Bt-ZZI" secondAttribute="centerX" id="SN5-kY-JEO"/>
+                            <constraint firstItem="vTp-Zb-a6e" firstAttribute="centerY" secondItem="pLI-Bt-ZZI" secondAttribute="centerY" id="Tp2-4V-WDE"/>
+                            <constraint firstItem="e0K-Zc-Zru" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XUp-G2-PN8"/>
+                            <constraint firstItem="pLI-Bt-ZZI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="Zg4-4E-qo0"/>
+                            <constraint firstItem="FaK-oo-8Ga" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="d5D-0D-QHk"/>
+                            <constraint firstItem="vTp-Zb-a6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eLP-Uo-w1T"/>
+                            <constraint firstItem="e0K-Zc-Zru" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g1a-aM-bmo"/>
+                            <constraint firstItem="pLI-Bt-ZZI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142.66666666666666" id="lF2-mz-QnT"/>
+                            <constraint firstItem="vTp-Zb-a6e" firstAttribute="centerX" secondItem="pLI-Bt-ZZI" secondAttribute="centerX" id="lU2-HZ-Y7s"/>
+                            <constraint firstItem="vTp-Zb-a6e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="ob2-SM-ZBD"/>
+                            <constraint firstItem="FaK-oo-8Ga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xlK-ZD-i7I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outputLbl" destination="pLI-Bt-ZZI" id="LIA-CL-DT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="+" width="300" height="300"/>
+        <image name="0" width="300" height="300"/>
+        <image name="1" width="300" height="300"/>
+        <image name="2" width="300" height="300"/>
+        <image name="3" width="300" height="300"/>
+        <image name="4" width="300" height="300"/>
+        <image name="5" width="300" height="300"/>
+        <image name="6" width="300" height="300"/>
+        <image name="7" width="300" height="300"/>
+        <image name="8" width="300" height="300"/>
+        <image name="9" width="300" height="300"/>
+        <image name="=" width="300" height="300"/>
+        <image name="C" width="300" height="300"/>
+        <image name="Divide" width="300" height="300"/>
+        <image name="Multiply" width="300" height="300"/>
+        <image name="_" width="300" height="300"/>
+        <image name="mars-landscape-background-with-flat-design_23-2147979445" width="626" height="626"/>
+        <image name="screen" width="829" height="284"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
